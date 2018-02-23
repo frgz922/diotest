@@ -1,9 +1,43 @@
 <html>
   <head>
     <script src="//localhost:35729/livereload.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
   </head>
   <body>
-    <h1> Grunt is running! </h1>
-    <h2> :) </h2>
+  	<div class="row" style="padding-top: 170px;">
+    	<div class="col-sm-6 col-md-4">
+		    <div class="panel panel-primary panel-transparent">
+     			<div class="panel-heading"><h2>Inicio de Sesi&oacute;n</h2></div>
+    			 	<div class="panel-body">
+			       		<form method="POST" action="#">
+			       			<div class="input-group" style="padding-bottom: 10px;">
+			       				<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-edit"></span></span>
+			       				<select class="form-control selectpicker" name="tipo" data-live-search="true">
+			       					<option value="">Seleccione Tipo</option>
+								  	<option value="V">V</option>
+								 	<option value="E">E</option>
+								  	<option value="P">P</option>
+								</select>
+			       			</div>
+							<div class="input-group" style="padding-bottom: 10px;">
+							  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+							  <input type="text" name="usuario" class="form-control" placeholder="Usuario" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group" style="padding-bottom: 10px;">
+							  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+							  <input type="text" name="clave" class="form-control" placeholder="Usuario" aria-describedby="basic-addon1">
+							</div>
+							<p>
+								<a>Olvid&oacute; su contrase&ntilde;a?</a>
+							</p>
+							<button type="submit" class="btn btn-primary">Aceptar</button>
+			       		</form>
+		      		</div>
+		      	</div>
+		    </div>
+  		</div>
+	</div>
   </body>
 </html>

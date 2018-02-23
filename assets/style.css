@@ -1,0 +1,31 @@
+/*.login {
+  background: url('../assets/images/background.jpg') center center cover no-repeat fixed;
+}*/
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: url('../assets/images/background.jpg') center;
+    text-align: center;
+    color: white;
+    min-height: 700px;body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: url('../assets/images/background.jpg') center;
+    text-align: center;
+    color: white;
+    min-height: 700px;
+}
+
+.panel-transparent {
+  background: #cccccc !important;
+}
+.panel-transparent .panel-heading {
+  background: rgba(122, 130, 136, 0.2)!important;
+}
+.panel-transparent .panel-body {
+  background: transparent;
+}

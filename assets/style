@@ -1,0 +1,3 @@
+.login {
+  background: url('images/background.jpg') center center cover no-repeat fixed;
+}
