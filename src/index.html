@@ -1,9 +1,43 @@
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
+    <script src="../src/app.js"></script>
   </head>
   <body>
-    <h1> Grunt is running! </h1>
-    <h2> :) </h2>
+  <div ng-app="myApp" ng-controller="myCtrl">
+
+    <p>Today's welcome message is:</p>
+
+    <input type="text" ng-model="username">
+
+    <h1>{{myWelcome}}</h1>
+
+  </div>
+
+  <p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
+
+  <!--<script>
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function($scope, $http) {
+          $http({
+              method : "POST",
+              url : "https://prueba-admision-web.herokuapp.com/session",
+              data: {
+                  username: "synergy",
+                  password: "synergy123",
+                  type: "V"
+              }
+          }).then(function mySuccess(response) {
+              $scope.myWelcome = response.data.cid;
+              console.log(response.data)
+          }, function myError(response) {
+              $scope.myWelcome = response.statusText;
+          });
+      });
+  </script>-->
   </body>
 </html>
